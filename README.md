@@ -28,23 +28,13 @@ mvn clean package
 
 ### 3. Access in Browser
 
-- `http://localhost:8080/ServletApp/` → JSP page
-- `http://localhost:8080/ServletApp/hello` → Servlet
+- `http://localhost:8080/TodoApp` → Servlet
 
-## ▶️ VS Code Task
-
-You can use the task below to build WAR from VS Code:
-
-```json
-{
-  "label": "Maven Build WAR",
-  "type": "shell",
-  "command": "mvn clean package",
-  "group": "build",
-  "problemMatcher": []
-}
-```
 
 ## Run Default Task
 
 - Press `Ctrl+Shift+B` to run Default Task
+
+## Screenshots
+
+![List Todos](src/main/webapp/images/todo-index.png "List Todos")
