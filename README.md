@@ -36,6 +36,30 @@ mvn clean package
 
 - Press `Ctrl+Shift+B` to run Default Task
 
+## SQL Query for Database
+```
+CREATE TABLE `todos` (
+  `id` int NOT NULL,
+  `title` varchar(200) NOT NULL,
+  `status` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL DEFAULT 'pending'
+);
+
+
+INSERT INTO `todos` (`id`, `title`, `status`) VALUES
+(1, 'Do Coding', 'completed'),
+(2, 'Eat Food', 'completed'),
+(3, 'Its Looking Good', 'pending'),
+(4, 'Hello Guys', 'pending');
+
+
+ALTER TABLE `todos` ADD PRIMARY KEY (`id`);
+
+
+ALTER TABLE `todos`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+COMMIT;
+```
+
 ## Screenshots
 
 ![List Todos](src/main/webapp/images/todo-index.png "List Todos")
