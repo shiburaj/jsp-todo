@@ -1,4 +1,5 @@
-# ServletApp - Run Servlet and JSP with Maven in VS Code
+# TodoApp
+Simple TodoApp with JSP and Servlets
 
 ## 🔧 Prerequisites
 
