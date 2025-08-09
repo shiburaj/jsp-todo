@@ -1,4 +1,6 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="com.shiburaj.models.Todo, com.shiburaj.DOA.TodoDOA, java.util.List" %>
+<%@ include file="authCheck.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +23,10 @@
   <div class="container my-5">
     <h2 class="text-center mb-4">My To-Do List</h2>
     <div class="text-center mb-4">
-      <a class="btn btn-primary mb-4" href="new.jsp">+ Add New Todo</a>
+      <div>
+        <a class="btn btn-primary mb-4" href="new.jsp">+ Add New Todo</a>
+        <a class="btn btn-secondary mb-4" href="logout">Logout</a>
+      </div>
       <jsp:include page="messages.jsp" />
     </div>
     
